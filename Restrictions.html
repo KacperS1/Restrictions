@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restrictions</title>
+</head>
+<body>
+    <form>
+        <label for="Zaznacz">Zaznacz</label>
+        <input type="checkbox" id="Zaznacz">
+        
+        <br>
+
+        <label for="Disabled">Disabled</label>
+        <input type="checkbox" disabled>
+
+        <br>
+
+        <label for="Suwak">Suwak</label>
+        <input type="range" min="10" max="100" value="2" id="Suwak" step="1">
+
+        <br>
+
+        <label for="Pole_Tekstowe">Komentarz</label>
+        <textarea id="Pole_Tekstowe"  maxlength="1000" minlength="10" placeholder="Wpisz swój komentarz"></textarea>
+
+        <br>
+
+        <label for="pin">PIN (4 liczby) </label>
+        <input id="pin" name="pin" type="password" pattern="\d{4,4}"  >
+
+        <br>
+
+        <label for="wiek">Wiek</label>
+        <input id="Wiek" name="Wiek" type="Liczba" value="42" readonly>
+
+        <br>
+
+        <label for="Wymagany">Required</label>
+        <input type="text" id="Wymagany" name="Required" required/>
+
+        <br>
+
+        <label for="Imię">Imię</label>
+        <input id="Imię" name="Imię" type="text" size="10" >
+
+        <br>
+
+        <input type="date" min="2020-13-10" step="1">
+
+        <br>
+
+        <button type="submit">Wyślij</button>
+        <button type="reset">Resetuj</button>
+
+    
+
+
+
+    </form>
+</body>
+</html>
